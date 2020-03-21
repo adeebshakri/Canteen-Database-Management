@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body id="top">
+            
+			
+				<section id="banner" data-video="images/banner">
+					<div class="inner">
+						<header>
+						    <h1>Welcome!</h1>
+							<p>Lets search what you are craving for!</br>Scroll down!</p>
+						</header>
+						<a href="#main" class="more">Learn More</a>
+					</div>
+				</section>
+
+				<center>
+					<br><br><br>
+					<%totp=0%>
+                    <h4>FOOD ITEM&emsp;&emsp;QUANTITY&emsp;&emsp;PRICE</h4>
+                    <br>
+					<%for(key in cart){%>
+                     <%name=key%><%quant=cart[key]%> <%rate=price[name]%> <%tot=rate*quant%><%totp+=tot%>
+			    	<p><%=name%>&emsp;&emsp;&emsp;&emsp;&emsp;<%=quant%>&emsp;&emsp;&emsp;&emsp;<%=tot%></p>
+			    <%}%>
+			    <p>--------------------------------------------------------------------------------</p>
+			    <p>TOTAL&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<%=totp%></p>
+			    <br><br><br>
+
+                <!-- <div class="box"> -->
+								<!-- <a href="" class="image fit"><img src="images/2.jpg" alt="" /></a> -->
+								<div class="inner">
+									
+									<a href="/lastPage" class="button style2 fit">Proceed To Checkout</a>
+								</div>
+							<!-- </div> -->
+
+			    </center>
+                
+               
+               
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Mouth-watering | Lip-smacking | Finger-licking</h2>
+						<p>Contact- 9800230989,6320043000<br>mycant@gmail.com</p>
+
+					
+					</div>
+				</footer>
+
+
+	</body>
+</html>
